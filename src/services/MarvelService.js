@@ -23,6 +23,11 @@ const useMarvelService = () => {
     return res.data.results.map(_transformComics);
   };
 
+  const getComic = async (id) => {
+    const res = await request(`${_apiBase}comics/${id}?${_apiKey}`);
+    return _transformComics(res.data.results[0]);
+  };
+
   const transformCharacterDescr = (descr) => {
     if (!descr) {
       return `There is no description for this character`;
@@ -48,14 +53,16 @@ const useMarvelService = () => {
     return {
       id: comics.id,
       name: comics.title,
-      //   descr: comics.description,
+      descr: comics.description || "There is no description",
+      pageCount: comics.pageCount ? `${comics.pageCount} pages` : "No information about number of page",
       thumbnail: comics.thumbnail.path + `.` + comics.thumbnail.extension,
+      lang: comics.textObjects.language || "en-us",
       price: comics.prices[0].price,
       url: comics.urls[0].url,
     };
   };
 
-  return { getAllCharacters, getCharacter, getAllComics, loading, error, clearError };
+  return { getAllCharacters, getCharacter, getAllComics, loading, error, clearError, getComic };
 };
 
 export default useMarvelService;

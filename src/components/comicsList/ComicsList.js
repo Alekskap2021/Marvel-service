@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import "./comicsList.scss";
 
@@ -33,14 +34,14 @@ const ComicsList = () => {
 
   const renderComics = (comicsList) => {
     const comics = comicsList.map((com, i) => {
-      const { price, name, thumbnail, url } = com;
+      const { price, name, thumbnail, id } = com;
       return (
         <li className="comics__item" key={i}>
-          <a href={url}>
+          <Link to={`/comics/${id}`}>
             <img src={thumbnail} alt={name} className="comics__item-img" />
             <div className="comics__item-name">{name}</div>
             <div className="comics__item-price">{price}</div>
-          </a>
+          </Link>
         </li>
       );
     });
