@@ -1,4 +1,4 @@
-import { Hashgit Router as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 import AppHeader from "../appHeader/AppHeader";
 import { ComicsPage, MainPage, Page404, SingleComicPage } from "../pages";
