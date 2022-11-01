@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Marvel-service/static/css/main.32308179.chunk.css",
-    "main.js": "/Marvel-service/static/js/main.12b96110.chunk.js",
-    "main.js.map": "/Marvel-service/static/js/main.12b96110.chunk.js.map",
+    "main.css": "/Marvel-service/static/css/main.66b91555.chunk.css",
+    "main.js": "/Marvel-service/static/js/main.d2e48928.chunk.js",
+    "main.js.map": "/Marvel-service/static/js/main.d2e48928.chunk.js.map",
     "runtime-main.js": "/Marvel-service/static/js/runtime-main.3f167d82.js",
     "runtime-main.js.map": "/Marvel-service/static/js/runtime-main.3f167d82.js.map",
-    "static/js/2.450073ce.chunk.js": "/Marvel-service/static/js/2.450073ce.chunk.js",
-    "static/js/2.450073ce.chunk.js.map": "/Marvel-service/static/js/2.450073ce.chunk.js.map",
+    "static/js/2.62ba1837.chunk.js": "/Marvel-service/static/js/2.62ba1837.chunk.js",
+    "static/js/2.62ba1837.chunk.js.map": "/Marvel-service/static/js/2.62ba1837.chunk.js.map",
     "index.html": "/Marvel-service/index.html",
-    "static/css/main.32308179.chunk.css.map": "/Marvel-service/static/css/main.32308179.chunk.css.map",
-    "static/js/2.450073ce.chunk.js.LICENSE.txt": "/Marvel-service/static/js/2.450073ce.chunk.js.LICENSE.txt",
+    "static/css/main.66b91555.chunk.css.map": "/Marvel-service/static/css/main.66b91555.chunk.css.map",
+    "static/js/2.62ba1837.chunk.js.LICENSE.txt": "/Marvel-service/static/js/2.62ba1837.chunk.js.LICENSE.txt",
     "static/media/Avengers.4065c8f9.png": "/Marvel-service/static/media/Avengers.4065c8f9.png",
     "static/media/Avengers_logo.9eaf2193.png": "/Marvel-service/static/media/Avengers_logo.9eaf2193.png",
     "static/media/error.42292aa1.gif": "/Marvel-service/static/media/error.42292aa1.gif",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3f167d82.js",
-    "static/js/2.450073ce.chunk.js",
-    "static/css/main.32308179.chunk.css",
-    "static/js/main.12b96110.chunk.js"
+    "static/js/2.62ba1837.chunk.js",
+    "static/css/main.66b91555.chunk.css",
+    "static/js/main.d2e48928.chunk.js"
   ]
 }
