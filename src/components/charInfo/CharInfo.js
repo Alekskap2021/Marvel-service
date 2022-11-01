@@ -6,6 +6,7 @@ import ErrorMessage from "../errorMessage/ErrorMessage";
 import Skeleton from "../skeleton/Skeleton";
 
 import "./charInfo.scss";
+import FindChar from "../findChar/FindChar";
 
 const CharInfo = (props) => {
   const [char, setChar] = useState(null),
@@ -35,11 +36,14 @@ const CharInfo = (props) => {
     content = !(error || loading || !char) ? <View char={char} /> : null;
 
   return (
-    <div className="char__info">
-      {skeleton}
-      {errorMessage}
-      {spinner}
-      {content}
+    <div className="char__wrapper">
+      <div className="char__info">
+        {skeleton}
+        {errorMessage}
+        {spinner}
+        {content}
+      </div>
+      <FindChar />
     </div>
   );
 };
