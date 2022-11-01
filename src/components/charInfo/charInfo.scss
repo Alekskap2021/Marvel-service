@@ -18,8 +18,18 @@
       line-height: 29px;
       text-transform: uppercase;
     }
-    .skeleton {
-      margin-top: 30px;
+
+    &::-webkit-scrollbar {
+      /* 1 - скроллбар */
+      width: 4px;
+      height: 4px;
+      background-color: #ffffff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      /* 5 - ползунок */
+      border-radius: 2px;
+      background-color: $main-color;
     }
   }
   &__basics {
@@ -58,6 +68,10 @@
       line-height: 25px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       margin-top: 10px;
+
+      &:hover {
+        color: $main-color;
+      }
     }
   }
   &__select {

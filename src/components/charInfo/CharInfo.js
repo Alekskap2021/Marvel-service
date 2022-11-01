@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import useMarvelService from "../../services/MarvelService";
 import Spinner from "../spinner/Spinner";
@@ -78,10 +79,10 @@ const View = ({ char }) => {
         {comics.length > 0 ? null : "There is no comics with this character"}
         {comics.map((item, i) => {
           // eslint-disable-next-line
-          if (i > 9) return;
+          const id = item.resourceURI.slice(43, item.resourceURI.length);
           return (
             <li key={i} className="char__comics-item">
-              {item.name}
+              <Link to={`/comics/${id}`}>{item.name}</Link>
             </li>
           );
         })}
