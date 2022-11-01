@@ -10,14 +10,17 @@ import "./findChar.scss";
 
 const FindChar = () => {
   const [char, setChar] = useState(null);
-  const { getCharacterByName, loading, error, clearError } = useMarvelService();
+  const [loading, setLoading] = useState(false);
+  const { getCharacterByName, error, clearError } = useMarvelService();
 
   const onCharLoaded = (char) => {
     setChar(char);
+    setLoading(false);
   };
 
   const updateChar = (name) => {
     clearError();
+    setLoading(true);
 
     getCharacterByName(name).then(onCharLoaded);
   };
@@ -52,7 +55,7 @@ const FindChar = () => {
           </label>
           <div className="form__search">
             <Field className="form__input" name="name" type="text" />
-            <button href="#" className="button button__main" type="submit">
+            <button href="#" className="button button__main" type="submit" disabled={loading}>
               <div className="inner">Find</div>
             </button>
           </div>
